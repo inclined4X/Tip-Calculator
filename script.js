@@ -67,8 +67,8 @@ function calculateTip(){
 
     // updatiing the text content after calculations
     tipAmountOutput.textContent = `Tip: $${tip.toFixed(2)}`;
-    totalAmountOutput.textContent = `Total Amount: $${tip.toFixed(2)}`;
-    amountPerPersonOutput.textContent = `Amount Per Person: $${tip.toFixed(2)}`;
+    totalAmountOutput.textContent = `Total Amount: $${totalAmount.toFixed(2)}`;
+    amountPerPersonOutput.textContent = `Amount Per Person: $${amountPerPerson.toFixed(2)}`;
 
 
 
