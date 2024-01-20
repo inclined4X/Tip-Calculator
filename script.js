@@ -6,15 +6,20 @@ function calculateTip(){
     const billAmountInput = document.getElementById('billAmount');
     const serviceRatingSelect = document.getElementById('ServiceRating');
     const splitCountInput = document.getElementById('splitCount');
-    const mealTypeInput = document.getElementById('mealType');
+    const mealTypeSelect = document.getElementById('mealType');
 
 
     // getting the IDs of the empty divs which displays the results
     const tipAmountOutput = document.getElementById('tipAmount');
-    const tipAmountOutput = document.getElementById('totalAmount');
-    const tipAmountOutput = document.getElementById('AmountPerPerson');
+    const totalAmountOutput = document.getElementById('totalAmount');
+    const amountPerPersonOutput = document.getElementById('amountPerPerson');
 
 
+    // changes that has to do wwith cconverting strings to numbers etc
+    const billAmount = parseFloat(billAmountInput.value);
+    const serviceRating = parseFloat(serviceRatingSelect.value);
+    const splitCount = parseInt(splitCountInput.value);
+    const mealType  = mealTypeSelect
 
 
 
