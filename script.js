@@ -56,6 +56,19 @@ function calculateTip(){
     let amountPerPerson =  totalAmount / splitCount;
 
 
+    // for selection of dinner and anytime dinner is selected there should be an increment of 5$ for tip, total Amount and Amount Per Person for addition
+    if(mealType === "dinner"){
+        tip +=5
+        totalAmount +=5
+        amountPerPerson +=5
+    }
+
+
+
+    // updatiing the text content after calculations
+    tipAmountOutput.textContent = `Tip: $${tip.toFixed(2)}`;
+    totalAmountOutput.textContent = `Total Amount: $${tip.toFixed(2)}`;
+    amountPerPersonOutput.textContent = `Amount Per Person: $${tip.toFixed(2)}`;
 
 
 
